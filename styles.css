@@ -22,10 +22,10 @@
 
 .challange  {
    text-align: center;
-   background-color: pink;
+   /*background-color: pink;*/
    opacity:75%;
    padding:1em;
-   border-radius: 5px 5px 10px 10px;
+   border-radius: 10px 10px 10px 10px;
    display:flex;
    justify-content: center;
    margin: 0em 1em 0.5em 1em;
@@ -34,22 +34,64 @@
 
 .landing  {
    display:flex;
+   padding:1rem;
+   margin:1rem;
+   border:1rem;
+   gap:20px;
+   justify-content: space-evenly;
    
 }
-.wrapper  {
-   
+.landing1 {
+   padding:3rem;
+   margin:1rem;
+   display: flex;
+   background-color: blue;
 
+
+}
+.landing2 {
+   display:flex;
+   flex-direction:column;
+   padding:1rem;
+
+}
+.landing3 {
+   display:flex;
+   flex-direction:column;
+   padding: 1rem;
+}
+.wrapper  {
+   display:flex 0 0 0%;
+   gap:.5rem;
+   padding:.3rem;
+   margin:.3rem;
+   
 }
 
 .container  {
-   flex-direction: column;
-   background-color:orange;
+   display:flex;
+   /*background-color:orange;*/
    text-align: center;
    margin: 10px;
    padding: 10px;
    border:  10px;
+   justify-content: space-evenly;
              }
 
-.object  {background-color:peachpuff;}
+.object  {
+   /*background-color:peachpuff;*/
+   display:flex;
+   text-align: center;
+   margin: 10px;
+   padding: 10px;
+   border:  10px;
+}
 
-.foot   {/**/}
+.foot   {
+   color:black;
+   background-color: aquamarine;
+   padding:.2rem;
+   margin:.3rem;
+   border:.1rem;
+   border-radius: 5px;
+}
