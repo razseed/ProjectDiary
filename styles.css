@@ -5,21 +5,27 @@ h1 {
    color:wheat;
 }
 
+.navbar {
+   display:flex;
+   justify-content: right;
+
+}
+
 .menu-btn {
    position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 80px;
-   height: 80px;
+   width: 50px;
+   height: 50px;
    cursor: pointer;
    transition: all .5s ease-in-out;
-   /*border:3px solid #fff*/
+   border:1px solid #fff
 }
 
 .menu-btn_burger{
-   width: 50px;
-   height: 6px;
+   width: 40px;
+   height: 3px;
    background: #fff;
    border-radius: 5px;
    box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -30,8 +36,8 @@ h1 {
 .menu-btn_burger::after {
    content: '';
    position:absolute;
-   width: 50px;
-   height: 6px;
+   width: 40px;
+   height: 3px;
    background: #fff;
    border-radius: 5px;
    box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -63,7 +69,7 @@ h1 {
 
 body {
    background: #272727;
-   
+/*Animation end*/  
 }
 .featured-container  {
    border:2px solid red;
@@ -71,15 +77,23 @@ body {
    margin:auto;
    gap:1em;
    display:grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    grid-template-rows: 10rem 10rem;
    max-width: 80%;
 }
 
 .featured-main {
-   grid-column: span 2;
+   grid-column: span 3;
    grid-row: span 2;
    background-color:steelblue;
+   
+}
+/*Work required to fit/fill and
+ preserve aspect ratio*/
+.featured-main>img {
+   object-fit: fill;
+   width:100%;
+   height: 100%;
 }
 
 .featured-secondary{
@@ -87,16 +101,25 @@ body {
    grid-column: span 2;
 }
 
+.featured-secondary>img{
+   object-fit: fill;
+   width:100%;
+   height: 100%;
+}
+
 .featured-tertiary {
    background-color: crimson;
    grid-column: span 2;
+
+}
+
+.featured-tertiary>img{
+   object-fit: fill;
+   width:100%;
+   height: 100%;
 }
 
 .content-wrapper {
-   display:flex;
-   flex-wrap: wrap;
-   justify-content:space-evenly;
-   text-align: center;
    background-color: orange;
    padding:2em;
    margin:auto;
@@ -104,6 +127,13 @@ body {
    
 }
 
+.container{
+   display:flex;
+   flex-wrap: wrap;
+   justify-content:space-evenly;
+   text-align: center;
+   
+}
 .content-one{
    color:white;
    background-color: crimson;
@@ -120,4 +150,10 @@ body {
    color:pink;
    background-color: steelblue;
    padding:1em;
+}
+
+p {
+   justify-content: center;
+   text-align: center;
+   
 }
