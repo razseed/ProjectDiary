@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 h1 {
    text-align: center;
    text-decoration: underline;
-   font-family:fantasy;
-   color:wheat;
+   font-family:'Parisienne', cursive, sans-serif;
+   color:#cb6ce6;
 }
-/*navbar and javascript code for animation*/
+/*navbar and javascript code for animation iteration 1 
 .navbar {
    display:flex;
    justify-content: right;
@@ -16,32 +17,32 @@ h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 50px;
-   height: 50px;
+   width: 40px;
+   height: 40px;
    cursor: pointer;
-   transition: all .5s ease-in-out;
-   border:1px solid #fff
+   transition: all .6s ease-in-out;
+   border:0.5px solid #cb6ce6;
 }
 
 .menu-btn_burger{
-   width: 40px;
-   height: 3px;
-   background: #fff;
+   width: 30px;
+   height: 2px;
+   background: #ede6e2;
    border-radius: 5px;
-   box-shadow: 0 2px 5px rgba(255,101,47,.2);
-   transition: all .5s ease-in-out;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+   transition: all .6s ease-in-out;
 }
 
 .menu-btn_burger::before,
 .menu-btn_burger::after {
    content: '';
    position:absolute;
-   width: 40px;
-   height: 3px;
-   background: #fff;
+   width: 30px;
+   height: 2px;
+   background: #ede6e2;
    border-radius: 5px;
-   box-shadow: 0 2px 5px rgba(255,101,47,.2);
-   transition:all .5s ease-in-out;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+   transition:all .6s ease-in-out;
 }
 
 .menu-btn_burger::before {
@@ -51,7 +52,7 @@ h1 {
 .menu-btn_burger::after {
    transform: translateY(16px);   
 }
-/*Animation*/
+/*Animation
 
 .menu-btn.open .menu-btn_burger {
    transform:translateX(-50px);
@@ -67,10 +68,11 @@ h1 {
    transform: rotate(-45deg) translate(35px, 35px);
 }
 
+/*Navbar end Animation end Iteration 1*/  
 body {
    background: #414141;
-/*Navbar end Animation end*/  
 }
+
 .featured-container  {
    /*box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);*/
    padding: 2em;
