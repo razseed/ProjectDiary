@@ -77,9 +77,10 @@ body {
    margin:auto;
    gap:1em;
    display:grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns:1fr 1fr 1fr 1fr 1fr;
    grid-template-rows: 10rem 10rem;
-   max-width: 80%;
+   max-width: 90%;
+   
 }
 
 .featured-main {
@@ -87,6 +88,8 @@ body {
    grid-column: span 3;
    grid-row: span 2;
    background-color:steelblue;
+   border: 2px solid #20212a;
+   border-radius: 8px;
    
 }
 /*Work required to fit/fill and
@@ -101,6 +104,8 @@ body {
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
    background-color: blueviolet;
    grid-column: span 2;
+   border: 2px solid #20212a;
+   border-radius: 8px;
 }
 
 .featured-secondary>img{
@@ -113,6 +118,8 @@ body {
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
    background-color: crimson;
    grid-column: span 2;
+   border: 2px solid #20212a;
+   border-radius: 8px;
 
 }
 
@@ -126,54 +133,57 @@ body {
   /* background-color: orange;*/
    padding:2em;
    margin:auto;
-   width: 80%;
-   
+   display:grid;
+   max-width: 90%;
+   grid-template-columns:1fr 1fr 1fr;
+   grid-template-rows: 10rem;
+   gap:1em;
+  
 }
 
-.container{
-   display:flex;
-   flex-wrap:nowrap;
-   justify-content:space-evenly;
-   text-align: center;
-   
-}
 .content-one{
-   color:white;
-   background-color: crimson;
-   padding:1em;
+   grid-row: span 1;
+   grid-column: span 1;
+   border:2px solid #20212a;
+   border-radius: 8px;
+   box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
 }
-
 .content-one>img {
-   min-width:7.5rem;
-   max-width:15rem;
-   height:100%;
+   object-fit: fill;
+   width:100%;
+   height: 100%;
 }
 
 .content-two{
-   color:purple;
-   background-color: blueviolet;
-   padding:1em;
+   grid-row: span 1;
+   grid-column: span 1;
+   border:2px solid #20212a;
+   border-radius: 8px;
+   box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
 }
 
 .content-two>img {
-   width:15rem;
-   height:100%;
-}
+   object-fit: fill;
+   width:100%;
+   height: 100%;
+}   
 
 .content-three{
-   color:pink;
-   background-color: steelblue;
-   padding:1em;
+   grid-row: span 1;
+   grid-column: span 1;
+   border:2px solid #20212a;
+   border-radius: 8px;
+   box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
+
 }
 
 .content-three>img {
-   width:15rem;
-   height:100%;
    object-fit: fill;
+   width:100%;
+   height: 100%;
 }
 
 p {
    justify-content: center;
    text-align: center;
-
 }
