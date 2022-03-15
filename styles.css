@@ -1,243 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-h1 {
+h1,h2 {
    text-align: center;
    text-decoration: underline;
    font-family:'Parisienne', cursive, sans-serif;
    color:#cb6ce6;
 }
-/*navbar and javascript code for animation iteration 1 
-.navbar {
-   display:flex;
-   justify-content: right;
+/* My attempt at a sidebar navigation - deleted dumpsterfire. 5 hours wasted.
+ my attempt at navbar end */
+/* copy pasted from w3schools to be played with to learn and understand why and what
+is happening where for what reasons */
+/* The side navigation menu */
+.sidenav {
+   height: 100%; /* 100% Full-height */
+   width: 0; /* 0 width - change this with JavaScript */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Stay on top */
+   top: 0; /* Stay at the top */
+   right: 0;
+   background-color: #20212a; /* Black*/
+   overflow-x: hidden; /* Disable horizontal scroll */
+   padding-top: 60px; /* Place content 60px from the top */
+   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+ }
+ 
+ /* The navigation menu links */
+ .sidenav a {
+   padding: 12px 12px;
+   text-align: center;
+   text-decoration:none;
+   font-weight: 800;
+   font-size: 25px;
+   color: #cb6ce6;
+   display: block;
+   transition: 0.3s;
 
-}
-
-.menu-btn {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 40px;
-   height: 40px;
-   cursor: pointer;
-   transition: all .6s ease-in-out;
-   border:0.5px solid #cb6ce6;
-}
-
-.menu-btn_burger{
-   width: 30px;
-   height: 2px;
-   background: #ede6e2;
-   border-radius: 5px;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-   transition: all .6s ease-in-out;
-}
-
-.menu-btn_burger::before,
-.menu-btn_burger::after {
-   content: '';
-   position:absolute;
-   width: 30px;
-   height: 2px;
-   background: #ede6e2;
-   border-radius: 5px;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-   transition:all .6s ease-in-out;
-}
-
-.menu-btn_burger::before {
-   transform: translateY(-16px);
-}
-
-.menu-btn_burger::after {
-   transform: translateY(16px);   
-}
-/*Animation
-
-.menu-btn.open .menu-btn_burger {
-   transform:translateX(-50px);
-   background: transparent;
-   box-shadow: none;
-}
-
-.menu-btn.open .menu-btn_burger::before {
-   transform: rotate(45deg) translate(35px, -35px);
-}
-
-.menu-btn.open .menu-btn_burger::after {
-   transform: rotate(-45deg) translate(35px, 35px);
-}
-
-/*Navbar end Animation end Iteration 1*/  
-/*navbar 2 by simone */
-*,
-*::before,
-*::after {
-   box-sizing: border-box;
-}
-
-:root {
-   --clr-primary:#ee6352;
-   --clr-dark: #333;
-   --clr-neutral: #ddd;
-   --clr-light: #fff;
-}
-/*this body broke the entire, page revist */
-/* not part of the Simone navbar */  
+ }
+ 
+ /* When you mouse over the navigation links, 
+ change their color */
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+ 
+.button {
+    float: right;
+    padding: 8px 8px;
+    border: 1px solid #cb6ce6;
+    border-radius: 10px;
+    background-color: #20212a;
+    color: #cb6ce6;
+    font-weight: bolder;  
+ }
+ /* Position and style the close button 
+ (top right corner)
+  */
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   left: 25px;
+   font-size: 36px;
+   margin-Right: 50px;
+ }
+ 
+ /* Style page content
+  - use this if you want to push the page content to the 
+  right
+   when you open the side navigation */
+ #main {
+   transition: margin-Right .5s;
+   padding: 20px;
+ }
+ 
+ /* On smaller screens, where height is less than 450px,
+  change the style of the sidenav
+   (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+   .sidenav {padding-top: 15px;}
+   .sidenav a {font-size: 18px;}
+ }
+/* end of copy pasta nav bar - Continued effort to 
+understand what each value is doing, 
+customizing it for my product*/
 body {
    background: #414141;
-/* not part of the Simone navbar */   
    font-family:'Parisienne', cursive, sans-serif;
-   min-height: 100vh;
-   display:flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 1.125em;
-   line-height: 1.6;
-   color: var(--clr-body);
-   background:var(--clr-neutral);
-   overflow-x:hidden;
 }
-
-a {color:var(--clr-primary);
-}
-
-.content {
-   background:var(--clr-light);
-   width:70vw;
-   padding:3em;
-   box-shadow: 0 0 3em rgba(0,0,0,.15);
-}
-
-.title {
-   margin:0 0 .5em;
-   font-weight:900;
-   color:var(--clr-primary);
-   line-height: .8;
-}
-
-.nav {
-   background:var(--clr-light);
-   position:absolute;
-   right:0;
-   box-shadow: 0 0 3em rgba(0,0,0,.15);
-   transform:translateX(100%);
-   transition:transform 300ms cubic-bezier(.5, 0, .5, 1);
-}
-
-.nav__list {
-   list-style:none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: column;
-   height:100vh;
-   padding:6em 6em 3em 6em;
-   text-align: center;
-   transform: translateX(50%);
-   opacity: 0;
-   transition: transform 350ms ease-in-out 10000ms, opacity 550ms
-   linear 500ms;
-}
-.nav__item {
-   margin-bottom: 1.5em;
-}
-
-.nav__link {
-   text-decoration: none;
-   color:var(--clr-dark);
-}
-
-.nav__link:hover {
-   text-decoration: underline;
-   color:var(--clr-primary);
-}
-
-.nav__toggle {
-   position: absolute;
-   top:2em;
-   left: 2em;
-   width: 3em;
-   height:3em;
-   transform: translateX(-150%);
-   background:var(--clr-light);
-   border:0;
-   border-radius: 1.5em;
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   transition: transform 350ms ease-in-out, left 350ms linear,
-   background 150ms linear;
-   z-index: 10;
-   padding: 0;
-}
-
-.hamburger {
-   display:block;
-   position: relative;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-   width: 1.5em;
-   height: 3px;
-   background: var(--clr-dark);
-   transition: transform 350ms ease-in-out, opacity 200ms linear;
-}
-
-.hamburger::before,
-.hamburger::after {
-   content:'';
-   position:absolute;
-   left:0;
-}
-
-.hamburger::before {
-   bottom: 6px;
-}
-
-.hamburger::after {
-   top: 6px;
-}
-
-.nav-open .nav {
-   transform: translateX(0);
-}
-
-.nav-open .hamburger {
-   transform:rotate(45deg);
-}
-
-.nav-open .hamburger::before {
-   opacity: 0;
-}
-
-.nav-open .hamburger::after {
-   transform:rotate(90deg) translate (-6px)
-}
-
-.nav-open .nav__toggle {
-   left:50%;
-   transform: translateX (-50%);
-}
-
-.nav-open .nav__list {
-   transform: translateX(0);
-   opacity: 1;
-}
-
-/*end of Navbar by Simone */
 
 .featured-container  {
-   /*box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);*/
    padding: 2em;
    margin:auto;
    gap:1em;
    display:grid;
    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-   grid-template-rows: 10rem 10rem;
-   max-width: 90%;
+   grid-template-rows: 15rem 15rem;
+   max-width: 75%;
    
 }
 
@@ -288,13 +144,11 @@ a {color:var(--clr-primary);
 }
 
 .content-wrapper {
-  /* background-color: orange;*/
-   padding:2em;
    margin:auto;
    display:grid;
-   max-width: 90%;
+   max-width: 75%;
    grid-template-columns:1fr 1fr 1fr;
-   grid-template-rows: 10rem;
+   grid-template-rows: 15rem;
    gap:1em;
   
 }

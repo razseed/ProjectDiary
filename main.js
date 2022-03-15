@@ -1,19 +1,11 @@
-//const menuBtn = document.querySelector('.menu-btn');
-//let menuOpen = false;
-//menuBtn.addEventListener('click', () => {
-    //if(!menuOpen) {
-   //     menuBtn.classList.add('open');
-   //     menuOpen = true;
-   // } else {
- //       menuBtn.classList.remove('open');
-//        menuOpen = false;
-//    }
-//}); Iteration 1 of Navbar 
-
-//New Navbar by Simone @Homunculus84
-
-const navToggle = document.querySelector('.nav__toggle');
-
-navToggle.addEventListener('click',() => {
-    document.body.classList.toggle('nav-open');
-});    
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight = "0";
+  }
