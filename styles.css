@@ -5,6 +5,13 @@ h1,h2 {
    font-family:'Parisienne', cursive, sans-serif;
    color:#cb6ce6;
 }
+h1 {
+   font-size: 2.5em;
+}
+
+h2 {
+   font-size: 2em;
+}
 /* My attempt at a sidebar navigation - deleted dumpsterfire. 5 hours wasted.
  my attempt at navbar end */
 /* copy pasted from w3schools to be played with to learn and understand why and what
@@ -21,10 +28,10 @@ is happening where for what reasons */
    overflow-x: hidden; /* Disable horizontal scroll */
    padding-top: 60px; /* Place content 60px from the top */
    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
- }
+}
  
  /* The navigation menu links */
- .sidenav a {
+.sidenav a {
    padding: 12px 12px;
    text-align: center;
    text-decoration:none;
@@ -34,50 +41,53 @@ is happening where for what reasons */
    display: block;
    transition: 0.3s;
 
- }
+}
  
  /* When you mouse over the navigation links, 
  change their color */
- .sidenav a:hover {
+.sidenav a:hover {
    color: #f1f1f1;
- }
- 
+}
 .button {
-    float: right;
-    padding: 8px 8px;
+    position: fixed;
+    padding: 15px 15px;
     border: 1px solid #cb6ce6;
     border-radius: 10px;
     background-color: #20212a;
     color: #cb6ce6;
-    font-weight: bolder;  
- }
+    font-weight: bolder;
+    cursor: pointer; 
+    top: 50px;
+    right:40px;
+    font-size:2em;
+}
  /* Position and style the close button 
  (top right corner)
   */
- .sidenav .closebtn {
+.sidenav .closebtn {
    position: absolute;
    top: 0;
    left: 25px;
    font-size: 36px;
    margin-Right: 50px;
- }
+}
  
  /* Style page content
   - use this if you want to push the page content to the 
   right
    when you open the side navigation */
- #main {
+#main {
    transition: margin-Right .5s;
    padding: 20px;
- }
+}
  
  /* On smaller screens, where height is less than 450px,
   change the style of the sidenav
    (less padding and a smaller font size) */
- @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
- }
+}
 /* end of copy pasta nav bar - Continued effort to 
 understand what each value is doing, 
 customizing it for my product*/
@@ -85,7 +95,6 @@ body {
    background: #414141;
    font-family:'Parisienne', cursive, sans-serif;
 }
-
 .featured-container  {
    padding: 2em;
    margin:auto;
@@ -93,15 +102,12 @@ body {
    display:grid;
    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
    grid-template-rows: 15rem 15rem;
-   max-width: 75%;
-   
+   max-width: 75%;  
 }
-
 .featured-main {
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
    grid-column: span 3;
    grid-row: span 2;
-   background-color:steelblue;
    border: 2px solid #20212a;
    border-radius: 8px;
    
@@ -113,36 +119,29 @@ body {
    width:100%;
    height: 100%;
 }
-
 .featured-secondary{
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
-   background-color: blueviolet;
    grid-column: span 2;
    border: 2px solid #20212a;
    border-radius: 8px;
 }
-
 .featured-secondary>img{
    object-fit: fill;
    width:100%;
    height: 100%;
 }
-
 .featured-tertiary {
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
-   background-color: crimson;
    grid-column: span 2;
    border: 2px solid #20212a;
    border-radius: 8px;
 
 }
-
 .featured-tertiary>img{
    object-fit: fill;
    width:100%;
    height: 100%;
 }
-
 .content-wrapper {
    margin:auto;
    display:grid;
@@ -152,7 +151,6 @@ body {
    gap:1em;
   
 }
-
 .content-one{
    grid-row: span 1;
    grid-column: span 1;
@@ -165,7 +163,6 @@ body {
    width:100%;
    height: 100%;
 }
-
 .content-two{
    grid-row: span 1;
    grid-column: span 1;
@@ -173,28 +170,23 @@ body {
    border-radius: 8px;
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
 }
-
 .content-two>img {
    object-fit: fill;
    width:100%;
    height: 100%;
 }   
-
 .content-three{
    grid-row: span 1;
    grid-column: span 1;
    border:2px solid #20212a;
    border-radius: 8px;
    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
-
 }
-
 .content-three>img {
    object-fit: fill;
    width:100%;
    height: 100%;
 }
-
 p {
    justify-content: center;
    text-align: center;
