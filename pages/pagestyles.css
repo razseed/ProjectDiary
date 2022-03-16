@@ -59,7 +59,8 @@ p {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
- }
+    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
+   }
   
   /* The navigation menu links */
  .sidenav a {
@@ -92,7 +93,8 @@ p {
      right:40px;
      font-size:2em;
      font-family:'Parisienne', cursive, sans-serif;
- }
+     box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
+   }
   /* Position and style the close button 
   (top right corner)
    */
