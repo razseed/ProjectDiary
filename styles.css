@@ -17,8 +17,6 @@ h3 {
 }
 /* My attempt at a sidebar navigation - deleted dumpsterfire. 5 hours wasted.
  my attempt at navbar end */
-/* copy pasted from w3schools to be played with to learn and understand why and what
-is happening where for what reasons */
 /* The side navigation menu */
 .sidenav {
    height: 100%; /* 100% Full-height */
@@ -76,11 +74,6 @@ is happening where for what reasons */
    font-size: 36px;
    margin-Right: 50px;
 }
- 
- /* Style page content
-  - use this if you want to push the page content to the 
-  right
-   when you open the side navigation */
 #main {
    transition: margin-Right .5s;
    padding: 20px;
@@ -93,9 +86,7 @@ is happening where for what reasons */
    .sidenav {padding-top: 15px;}
    .sidenav a {font-size: 18px;}
 }
-/* end of copy pasta nav bar - Continued effort to 
-understand what each value is doing, 
-customizing it for my product*/
+
 body {
    background: #414141;
    font-family:'Parisienne', cursive, sans-serif;
@@ -115,13 +106,10 @@ body {
    grid-row: span 2;
    border: 2px solid #20212a;
    border-radius: 8px;
-   
 }
-/*Work required to fit/fill and
- preserve aspect ratio*/
 .featured-main>img {
-   object-fit: fill;
-   width:100%;
+   object-fit:fill;
+   max-width:100%;
    height: 100%;
 }
 .featured-secondary{
@@ -140,7 +128,6 @@ body {
    grid-column: span 2;
    border: 2px solid #20212a;
    border-radius: 8px;
-
 }
 .featured-tertiary>img{
    object-fit: fill;
@@ -154,7 +141,6 @@ body {
    grid-template-columns:1fr 1fr 1fr;
    grid-template-rows: 15rem;
    gap:1em;
-  
 }
 .content-one{
    grid-row: span 1;

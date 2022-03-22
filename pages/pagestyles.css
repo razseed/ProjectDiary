@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
-h1,h2 {
+h1,h2,h3 {
    text-align: center;
    text-decoration: underline;
    font-family:'Parisienne', cursive, sans-serif;
@@ -11,6 +11,9 @@ h1 {
 
 h2 {
    font-size: 2em;
+}
+h3 {
+   font-size: 1.5em;
 }
 body {
     background-color: #414141;
@@ -77,10 +80,10 @@ p {
   
   /* When you mouse over the navigation links, 
   change their color */
- .sidenav a:hover {
+.sidenav a:hover {
     color: #f1f1f1;
  }
- .button {
+.button {
      position: fixed;
      padding: 15px 15px;
      border: 1px solid #cb6ce6;
@@ -122,3 +125,52 @@ p {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
  }
+/*TOP SECTION*/
+ .topsection {
+   background-color:#20212a;
+   color:white;
+   min-height: 20em;
+   }
+.initial-impression-img-auther {
+   display:flex;
+   color:white;
+   justify-content:space-evenly;
+}
+.ivana-stats-reviewstars {
+   color:white;
+   justify-content: space-evenly;
+   display:flex;
+}
+ /*End of TOP section */
+ /*Second from TOP section "mid"*/
+.midsection {
+   background-color:#cc6ce672;
+   color:#20212a;
+   min-height: 20em;
+}
+.synopsis-bookcover {
+   display:flex;
+   color:#20212a;
+   justify-content: space-evenly;;
+} 
+ /*End of Top midsection*/
+.mainsection {
+   background-color:#9e489b8e;
+   color:white;
+   min-height: 20em;
+}
+.insta-main-review {
+   display:flex;
+   justify-content: space-evenly;
+   color: white;
+}
+.bottomsection {
+   background-color: #20212a;
+   color:#cb6ce6;
+   min-height: 20em;
+}
+.about-auther-socials-support-medals {
+   display:flex;
+   justify-content: space-evenly;
+   color: #cb6ce6;
+} 
