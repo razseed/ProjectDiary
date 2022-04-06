@@ -19,20 +19,18 @@ body {
     background-color: #414141;
 }
 p {
-    text-align: center;
+   /* text-align: center;*/
     color: white;
     font-size: larger;
 }
-/* Must Fix this alignment bullshit for image on right */
 .container {
-    display:flex;
-    justify-content:space-evenly;
+   display:flex;
+   justify-content: space-evenly;
 }
-.bio{
-    text-align: center;
-    justify-content: center;
-    font-family: cursive, sans-serif;
+.bio {
+   text-align: left;
 }
+
 .signature {
     font-family:'Parisienne', cursive, sans-serif;
     text-decoration:underline;
@@ -40,11 +38,9 @@ p {
     font-weight: bolder;
 }
 .Portrait {
-    position: sticky;
-    top: 150px;
-    right: 40px;
+   max-height: 300px;
 }
-.Portrait>img {
+.Portrait img {
     object-fit: fill;
     height:400px;
     width: auto;
@@ -130,16 +126,25 @@ p {
    background-color:#20212a;
    color:white;
    min-height: 20em;
-   }
-.initial-impression-img-auther {
    display:flex;
+   }
+.topsectionItems{
+   
+}   
+.initial-impression-img-auther {
    color:white;
-   justify-content:space-evenly;
+   padding: 20px;
+   max-width: 40%;
+}
+.initial-impresson-img-auther p{
+   max-width: 30%;
 }
 .ivana-stats-reviewstars {
    color:white;
-   justify-content: space-evenly;
-   display:flex;
+}
+.rating {
+   font-size: 300%;
+
 }
  /*End of TOP section */
  /*Second from TOP section "mid"*/
