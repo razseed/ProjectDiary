@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    color:#cb6ce6;
+}
+
+body {
+    background: #414141;
+    font-family:'Merriweather', serif, sans-serif;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #20212a; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
+ }
+  
+  /* The navigation menu links */
+ .sidenav a {
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration:none;
+    font-weight: 800;
+    font-size: 25px;
+    color: #cb6ce6;
+    display: block;
+    transition: 0.3s;
+ 
+ }
+  
+  /* When you mouse over the navigation links, 
+  change their color */
+ .sidenav a:hover {
+    color: #f1f1f1;
+ }
+ .button {
+     position: fixed;
+     padding: 15px 15px;
+     border: 1px solid #cb6ce6;
+     border-radius: 10px;
+     background-color: #20212a;
+     color: #cb6ce6;
+     font-weight: bolder;
+     cursor: pointer; 
+     top: 50px;
+     right:40px;
+     font-size:2em;
+     box-shadow:0px 0px 6px 6px rgba(0,0,0,0.3);
+ }
+  /* Position and style the close button 
+  (top right corner)
+   */
+ .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-Right: 50px;
+ }
+ #main {
+    transition: margin-Right .5s;
+    padding: 20px;
+ }
+  
+  /* On smaller screens, where height is less than 450px,
+   change the style of the sidenav
+    (less padding and a smaller font size) */
+ @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+ }
