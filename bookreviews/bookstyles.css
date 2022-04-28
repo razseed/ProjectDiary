@@ -13,26 +13,35 @@ h2,h3 {
 .topSectionBackground {
    background-color:rgba(225, 222, 216, 0.344) ;
    min-width:90%;
-   height: calc(100px + 5vh);
-   justify-content: center;
+   height: calc(300px + 5vh);
+   justify-content: space-evenly;
    display: flex;
 }
 .topSectionBackground2 {
    background-color:rgba(225, 222, 216, 0.344) ;
    min-width:90%;
-   height: calc(100px + 5vh);
-   justify-content: center;
+   height: calc(300px + 5vh);
+   justify-content: space-evenly;
    display: flex;
 }
 .blogger{
    justify-content: right;
    align-content: left;
 }
-.right {
-   align-content: left;
+.reviewStars {
+   font-weight: 700;
+   font-size: xx-large;
+   
 }
+   
 .Bookstats {
    align-content: center;
+}
+.bookStatTitle {
+   text-align: center;
+}
+.impressions {
+   max-width: 33%;
 }
 
 body {
