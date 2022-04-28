@@ -5,9 +5,38 @@ h1 {
     text-align: center;
     color:#cb6ce6;
 }
+h2,h3 {
+   color:#cb6ce6;
+
+}
+
+.topSectionBackground {
+   background-color:rgba(225, 222, 216, 0.344) ;
+   min-width:90%;
+   height: calc(100px + 5vh);
+   justify-content: center;
+   display: flex;
+}
+.topSectionBackground2 {
+   background-color:rgba(225, 222, 216, 0.344) ;
+   min-width:90%;
+   height: calc(100px + 5vh);
+   justify-content: center;
+   display: flex;
+}
+.blogger{
+   justify-content: right;
+   align-content: left;
+}
+.right {
+   align-content: left;
+}
+.Bookstats {
+   align-content: center;
+}
 
 body {
-    background: #414141;
+    background: #ffffff;
     font-family:'Merriweather', serif, sans-serif;
 }
 
