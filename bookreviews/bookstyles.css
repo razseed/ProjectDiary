@@ -9,16 +9,35 @@ h2,h3 {
    color:#cb6ce6;
 
 }
-
+.brand {
+   color:#20212a;
+   text-align: center;
+   text-decoration: underline;
+   font-weight: 900;
+   font-size: 40px;
+   background-color: rgba(248, 245, 238, 0.885);
+   padding:10px 00px 30px 00px ;
+   min-width:100%;
+   margin:-10px;
+   border:10px;
+   justify-content: center;
+   text-align: center;
+}
+.topSection {
+   background-color:#20212a ;
+   padding-top: 5px;
+   margin:-21.44px;
+   border: 0px;
+}
 .topSectionBackground {
-   background-color:rgba(225, 222, 216, 0.344) ;
+   background-color:rgba(248, 245, 238, 0.885) ;
    min-width:90%;
    height: calc(300px + 5vh);
    justify-content: space-evenly;
    display: flex;
 }
 .topSectionBackground2 {
-   background-color:rgba(225, 222, 216, 0.344) ;
+   background-color:rgba(248, 245, 238, 0.885) ;
    min-width:90%;
    height: calc(300px + 5vh);
    justify-content: space-evenly;
@@ -30,7 +49,8 @@ h2,h3 {
 }
 .reviewStars {
    font-weight: 700;
-   font-size: xx-large;
+   font-size: 50px;
+   
    
 }
    
@@ -107,7 +127,9 @@ body {
  }
  #main {
     transition: margin-Right .5s;
-    padding: 20px;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
  }
   
   /* On smaller screens, where height is less than 450px,
