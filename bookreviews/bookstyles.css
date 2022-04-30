@@ -85,6 +85,22 @@ body {
     font-family:'Merriweather', serif, sans-serif;
 }
 
+.midSection {
+   display:flex;
+   justify-content: space-evenly;
+   padding: 30px;
+   margin: 15px;
+
+}
+
+.quote {
+   font-weight: 500;
+   padding: 30px;
+   margin: 15px;
+   color: rgba(150, 150, 150, 1.0);
+   font-style: italic;
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
