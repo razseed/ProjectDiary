@@ -29,7 +29,8 @@ img {
    height: auto;
    max-width: 40vh;
    max-height: 40vh;
-   margin:;
+   margin:10px;
+   border-radius: 8px;
   }
 
 .topSection {
@@ -90,6 +91,15 @@ body {
    justify-content: space-evenly;
    padding: 30px;
    margin: 15px;
+   align-content: stretch;
+
+
+}
+
+.middleDiv {
+   margin:20px;
+   padding:30px;
+   max-width: 65%;
 
 }
 
@@ -99,6 +109,10 @@ body {
    margin: 15px;
    color: rgba(150, 150, 150, 1.0);
    font-style: italic;
+   max-width: 10%;
+   align-content: center;
+   text-align: center;
+
 }
 
 .sidenav {
