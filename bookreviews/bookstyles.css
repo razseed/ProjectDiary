@@ -7,8 +7,10 @@ h1 {
 }
 h2,h3 {
    color:#cb6ce6;
+   align-self: center;
 
 }
+
 .brand {
    color:#20212a;
    text-align: center;
@@ -18,11 +20,17 @@ h2,h3 {
    background-color: rgba(248, 245, 238, 0.885);
    padding:10px 00px 30px 00px ;
    min-width:100%;
+   min-height: 100vh;
    margin:-10px;
    border:10px;
    justify-content: center;
    text-align: center;
+   background-image: url("../photos/loveBooks.jpg");/* Fight with this image for a top section background 
+   Gimp is not playing nice, wasted too much time, moving on for now */
+   background-repeat: no-repeat;
+   background-size: auto;
 }
+
 img {
    display: block;
    width: auto;
@@ -31,7 +39,13 @@ img {
    max-height: 40vh;
    margin:10px;
    border-radius: 8px;
-  }
+}
+
+.purchase {
+   text-decoration: underline;
+   border: 3px solid #20212a;
+   text-align:center;
+}  
 
 #topImg {
    height:40vh;
@@ -63,9 +77,8 @@ img {
    justify-content: space-around;
    display: flex;
    align-content: space-around;
-   padding:40px;
+   padding:40px 00px 80px 00px;
    gap:200px;
-   
 }
 
 .blogger{
@@ -78,15 +91,20 @@ img {
    font-size: 50px;   
 }
    
-.Bookstats {
+#Bookstats {
    align-content: center;
+   align-self: center;
+   justify-content: center;
 }
 
 .bookStatTitle {
    text-align: center;
+   align-self: center;
 }
+
 .impressions {
    max-width: 25%;
+   align-self: center;
 }
 
 body {
@@ -100,15 +118,12 @@ body {
    padding: 30px;
    margin: 15px;
    align-content: stretch;
-
-
 }
 
 .middleDiv {
    margin:20px;
    padding:30px;
    max-width: 65%;
-
 }
 
 .quote {
@@ -117,10 +132,17 @@ body {
    margin: 15px;
    color: rgba(150, 150, 150, 1.0);
    font-style: italic;
-   max-width: 10%;
+   max-width: 25%;
    align-content: center;
    text-align: center;
+}
 
+.portraitSubHeading {
+   font-weight: 400;
+   text-decoration: underline;
+   justify-content: center;
+   text-align: center;
+   align-content:center;
 }
 
 .sidenav {
@@ -147,7 +169,6 @@ body {
     color: #cb6ce6;
     display: block;
     transition: 0.3s;
- 
  }
   
   /* When you mouse over the navigation links, 
@@ -192,4 +213,15 @@ body {
  @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+ }
+
+ .rating {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    text-decoration: underline;
+    border: 5px solid #cb6ce6;
+    padding: 20px;
+    height: 35%;
+    align-self: center;
  }
