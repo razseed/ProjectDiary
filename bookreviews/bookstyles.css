@@ -12,7 +12,7 @@ h2,h3 {
 }
 
 .brand {
-   color:#20212a;
+   color:#ffffff;
    text-align: center;
    text-decoration: underline;
    font-weight: 900;
@@ -20,15 +20,15 @@ h2,h3 {
    background-color: rgba(248, 245, 238, 0.885);
    padding:10px 00px 30px 00px ;
    min-width:100%;
-   min-height: 100vh;
+   min-height: 50vh;
    margin:-10px;
    border:10px;
    justify-content: center;
    text-align: center;
-   background-image: url("../photos/loveBooks.jpg");/* Fight with this image for a top section background 
-   Gimp is not playing nice, wasted too much time, moving on for now */
+   background-image: url("../photos/heroImg.jpg");
    background-repeat: no-repeat;
-   background-size: auto;
+   background-size: 100% 60vh;
+   
 }
 
 img {
